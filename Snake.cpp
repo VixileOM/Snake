@@ -11,7 +11,7 @@ void gotoxy( int column, int line );
 
 #define MINX 2
 #define MINY 2
-#define MAXX 
+#define MAXX 35
 #define MAXY 20
 void Vekhung(){
     for (int i = MINX; i<=MAXX; i++){
@@ -75,7 +75,7 @@ int main()
             if (t=='x') Huong = 1;
         }
         system("cls");
-        VeKhung();
+        Vekhung();
         r.Ve(Qua);
         r.DiChuyen(Huong, Qua);
         Sleep(300);
