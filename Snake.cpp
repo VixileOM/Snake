@@ -16,7 +16,7 @@ void gotoxy( int column, int line );
 void Vekhung(){
     for (int i = MINX; i<=MAXX; i++){
         for (int j = MINX; j<=MAXY; j++){
-            if ((i==MINX) || (1==MAXX) || (j==MINY) || (j==MAXY)){
+            if ((i==MINX) || (i==MAXX) || (j==MINY) || (j==MAXY)){
                 gotoxy(i,j); printf("+");
             }
         }
