@@ -3,7 +3,25 @@
 #include <cstdlib>
 #include <conio.h>
 using namespace std;
+
 void gotoxy( int column, int line );
+
+
+
+
+#define MINX 2
+#define MINY 2
+#define MAXX 
+#define MAXY 20
+void Vekhung(){
+    for (int i = MINX; i<=MAXX; i++){
+        for (int j = MINX; j<=MAXY; j++){
+            if ((i==MINX) || (1==MAXX) || (j==MINY) || (j==MAXY)){
+                gotoxy(i,j); printf("+");
+            }
+        }
+    }
+}
 struct Point{
     int x,y;
 };
@@ -57,6 +75,7 @@ int main()
             if (t=='x') Huong = 1;
         }
         system("cls");
+        VeKhung();
         r.Ve(Qua);
         r.DiChuyen(Huong, Qua);
         Sleep(300);
